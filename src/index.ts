@@ -96,7 +96,7 @@ async function generateCommitMessage(diff: string): Promise<string> {
     --- 差分ここまで ---
     `;
 
-    console.log("Geminiにメッセージ生成を依頼中 (model: gemini-pro)...");
+    console.log("Geminiにメッセージ生成を依頼中...");
 
     const result = await model.generateContent(prompt);
     const response = result.response;
