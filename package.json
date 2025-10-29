@@ -1,0 +1,38 @@
+{
+  "name": "ai-commit-cli",
+  "version": "1.0.0",
+  "description": "Gemini APIでコミットメッセージを生成するCLIツール",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "gcommit": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "gemini",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "commander": "^14.0.2",
+    "dotenv": "^17.2.3",
+    "inquirer": "^12.10.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^24.9.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
