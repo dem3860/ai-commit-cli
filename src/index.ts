@@ -82,7 +82,7 @@ async function generateCommitMessage(diff: string): Promise<string> {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
     const prompt = `
     以下のgitの差分（diff）を分析し、Conventional Commits形式のコミットメッセージを1行で生成してください。
